@@ -164,9 +164,9 @@ int main(void)
 }
 ```
 ## OUTPUT
-![ledonboardOFF]![i3](https://github.com/user-attachments/assets/cd83d524-42a4-4920-b4c4-4af6bc995196)
+![ledonboardON]![i3](https://github.com/user-attachments/assets/cd83d524-42a4-4920-b4c4-4af6bc995196)
 
-![ledonboardON]![i4](https://github.com/user-attachments/assets/57caa953-2749-426e-9a08-4ab1ca2e3779)
+![ledonboardOFF]![i4](https://github.com/user-attachments/assets/57caa953-2749-426e-9a08-4ab1ca2e3779)
 
 
 
