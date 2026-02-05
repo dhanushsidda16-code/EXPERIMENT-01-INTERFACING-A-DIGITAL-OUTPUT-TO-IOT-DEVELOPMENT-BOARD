@@ -1,13 +1,10 @@
-# EXPERIMENT-01-INTERFACING-A-DIGITAL-OUTPUT-TO-IOT-DEVELOPMENT-BOARD
+**DATE: 02: 02: 2026**
 
+**NAME: SIDDA DHANUSH**
 
-**DATE:**
+**ROLL NO: 212224243006**
 
-**NAME:**
-
-**ROLL NO:**
-
-**DEPARTMENT:**
+**DEPARTMENT: AIML**
 
 ## Aim
 
@@ -99,10 +96,79 @@ With its power-efficient design, built-in LoRaWAN support, and flexible communic
 ## STM 32 CUBE PROGRAM
 
 ```
-// Your STM 32 CUBE Program code here
+1A
+
+
+
+#include "main.h"
+
+void SystemClock_Config(void);
+static void MX_GPIO_Init(void);
+
+int main(void)
+{
+ 
+  HAL_Init();
+
+  SystemClock_Config();
+
+  MX_GPIO_Init();
+ 
+  while (1)
+  {
+	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_0,GPIO_PIN_SET);
+	  HAL_Delay(5000);
+	  HAL_GPIO_WritePin(GPIOA,GPIO_PIN_0,GPIO_PIN_RESET);
+	  HAL_Delay(5000);
+
+
+  }
+}
 ```
 
 ## OUTPUT
+![onboardON]![i1](https://github.com/user-attachments/assets/7990f024-5caa-4b11-874d-909721ad9335) 
+
+![onboardOFF]![iot1](https://github.com/user-attachments/assets/4a74b00b-fc50-4b0c-8c02-9559ae3577fe)
+
+## STM 32 CUBE PROGRAM
+
+```
+
+1B
+
+
+#include "main.h"
+
+void SystemClock_Config(void);
+static void MX_GPIO_Init(void);
+
+int main(void)
+{
+ 
+  HAL_Init();
+
+  SystemClock_Config();
+
+  MX_GPIO_Init();
+ 
+  while (1)
+  {
+	  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,GPIO_PIN_SET);
+	  HAL_Delay(5000);
+	  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,GPIO_PIN_RESET);
+	  HAL_Delay(5000);
+
+
+  }
+}
+```
+## OUTPUT
+![ledonboardOFF]![i3](https://github.com/user-attachments/assets/cd83d524-42a4-4920-b4c4-4af6bc995196)
+
+![ledonboardON]![i4](https://github.com/user-attachments/assets/57caa953-2749-426e-9a08-4ab1ca2e3779)
+
+
 
 ## Result
 
