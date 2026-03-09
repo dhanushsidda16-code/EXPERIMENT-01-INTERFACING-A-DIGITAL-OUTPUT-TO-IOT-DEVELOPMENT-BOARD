@@ -100,6 +100,10 @@ With its power-efficient design, built-in LoRaWAN support, and flexible communic
 
 
 
+1A
+
+
+
 #include "main.h"
 
 void SystemClock_Config(void);
@@ -138,30 +142,7 @@ int main(void)
 1B
 
 
-#include "main.h"
 
-void SystemClock_Config(void);
-static void MX_GPIO_Init(void);
-
-int main(void)
-{
- 
-  HAL_Init();
-
-  SystemClock_Config();
-
-  MX_GPIO_Init();
- 
-  while (1)
-  {
-	  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,GPIO_PIN_SET);
-	  HAL_Delay(5000);
-	  HAL_GPIO_WritePin(GPIOB,GPIO_PIN_4,GPIO_PIN_RESET);
-	  HAL_Delay(5000);
-
-
-  }
-}
 ```
 ## OUTPUT
 ![ledonboardON]![i3](https://github.com/user-attachments/assets/cd83d524-42a4-4920-b4c4-4af6bc995196)
